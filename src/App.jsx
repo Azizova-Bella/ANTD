@@ -23,7 +23,6 @@ const App = () => {
   };
 
   const addUser = async () => {
-    if (!title.trim() || !description.trim()) return;
     try {
       const { data } = await axios.post(API, {
         title,
